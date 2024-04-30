@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Structicons';
-  src:  url('fonts/Structicons.eot?1vvfuu');
-  src:  url('fonts/Structicons.eot?1vvfuu#iefix') format('embedded-opentype'),
-  url('fonts/Structicons.ttf?1vvfuu') format('truetype'),
-  url('fonts/Structicons.woff?1vvfuu') format('woff'),
-  url('fonts/Structicons.svg?1vvfuu#Structicons') format('svg');
+  src:  url(/fonts/Structicons.eot?1vvfuu');
+  src:  url('/fonts/Structicons.eot?1vvfuu#iefix') format('embedded-opentype'),
+  url('/fonts/Structicons.ttf?1vvfuu') format('truetype'),
+  url('/fonts/Structicons.woff?1vvfuu') format('woff'),
+  url('/fonts/Structicons.svg?1vvfuu#Structicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

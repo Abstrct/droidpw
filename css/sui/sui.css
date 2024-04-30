@@ -144,7 +144,7 @@ a:hover {
 }
 
 body {
-  background: url("/img/sui/page/page-background.png") repeat var(--page-background);
+  background: url("img/sui/page/page-background.png") repeat var(--page-background);
   color: var(--text-body);
 
   text-align: center;
@@ -312,182 +312,182 @@ i.sui-icon-air {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-air.png");
+  background-image: url("img/sui/icon/icon-air.png");
 }
 
 i.sui-icon-alpha-matter {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-alpha-matter.png");
+  background-image: url("img/sui/icon/icon-alpha-matter.png");
 }
 
 i.sui-icon-alpha-ore {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-alpha-ore.png");
+  background-image: url("img/sui/icon/icon-alpha-ore.png");
 }
 
 i.sui-icon-armour {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-armour.png");
+  background-image: url("img/sui/icon/icon-armour.png");
 }
 
 i.sui-icon-attacker {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-attacker.png");
+  background-image: url("img/sui/icon/icon-attacker.png");
 }
 
 i.sui-icon-counter-attack {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-counter-attack.png");
+  background-image: url("img/sui/icon/icon-counter-attack.png");
 }
 
 i.sui-icon-defended {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-defended.png");
+  background-image: url("img/sui/icon/icon-defended.png");
 }
 
 i.sui-icon-defender-block {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-defender-block.png");
+  background-image: url("img/sui/icon/icon-defender-block.png");
 }
 
 i.sui-icon-defender-counter {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-defender-counter.png");
+  background-image: url("img/sui/icon/icon-defender-counter.png");
 }
 
 i.sui-icon-defending {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-defending.png");
+  background-image: url("img/sui/icon/icon-defending.png");
 }
 
 i.sui-icon-deflector-shield {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-deflector-shield.png");
+  background-image: url("img/sui/icon/icon-deflector-shield.png");
 }
 
 i.sui-icon-deployed-structs {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-deployed-structs.png");
+  background-image: url("img/sui/icon/icon-deployed-structs.png");
 }
 
 i.sui-icon-destroyed {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-destroyed.png");
+  background-image: url("img/sui/icon/icon-destroyed.png");
 }
 
 i.sui-icon-electronic-warfare-system {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-electronic-warfare-system.png");
+  background-image: url("img/sui/icon/icon-electronic-warfare-system.png");
 }
 
 i.sui-icon-enemy-indicator {
   width: var(--icon-xs);
   height: var(--icon-xs);
 
-  background-image: url("/img/sui/icon/icon-enemy-indicator.png");
+  background-image: url("img/sui/icon/icon-enemy-indicator.png");
 }
 
 i.sui-icon-enemy-shield-health {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-enemy-shield-health.png");
+  background-image: url("img/sui/icon/icon-enemy-shield-health.png");
 }
 
 i.sui-icon-energy {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-energy.png");
+  background-image: url("img/sui/icon/icon-energy.png");
 }
 
 i.sui-icon-inert-alpha {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-inert-alpha.png");
+  background-image: url("img/sui/icon/icon-inert-alpha.png");
 }
 
 i.sui-icon-land {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-land.png");
+  background-image: url("img/sui/icon/icon-land.png");
 }
 
 i.sui-icon-player-indicator {
   width: var(--icon-xs);
   height: var(--icon-xs);
 
-  background-image: url("/img/sui/icon/icon-player-indicator.png");
+  background-image: url("img/sui/icon/icon-player-indicator.png");
 }
 
 i.sui-icon-players {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-players.png");
+  background-image: url("img/sui/icon/icon-players.png");
 }
 
 i.sui-icon-shield-health {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-shield-health.png");
+  background-image: url("img/sui/icon/icon-shield-health.png");
 }
 
 i.sui-icon-space {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-space.png");
+  background-image: url("img/sui/icon/icon-space.png");
 }
 
 i.sui-icon-stealth-mode {
   width: var(--icon-lg);
   height: var(--icon-lg);
 
-  background-image: url("/img/sui/icon/icon-stealth-mode.png");
+  background-image: url("img/sui/icon/icon-stealth-mode.png");
 }
 
 i.sui-icon-undiscovered-ore {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-undiscovered-ore.png");
+  background-image: url("img/sui/icon/icon-undiscovered-ore.png");
 }
 
 i.sui-icon-water {
   width: var(--icon-md);
   height: var(--icon-md);
 
-  background-image: url("/img/sui/icon/icon-water.png");
+  background-image: url("img/sui/icon/icon-water.png");
 }
 
 /* ---- Icons End ---- */
@@ -514,7 +514,7 @@ a.sui-panel-btn:visited {
 a.sui-panel-btn.sui-mod-default {
   padding-top: var(--spacing-md);
 
-  background: url("/img/sui/panel/panel-btn-default.png") no-repeat;
+  background: url("img/sui/panel/panel-btn-default.png") no-repeat;
   color: var(--icon-dark);
 }
 
@@ -522,36 +522,36 @@ a.sui-panel-btn.sui-mod-default {
 a.sui-panel-btn.sui-mod-default:active {
   padding-top: var(--spacing-lg);
 
-  background: url("/img/sui/panel/panel-btn-pressed.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-pressed.png") bottom no-repeat;
 }
 
 .sui-panel-btn.sui-mod-pressed,
 a.sui-panel-btn.sui-mod-pressed {
-  background: url("/img/sui/panel/panel-btn-pressed.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-pressed.png") bottom no-repeat;
   color: var(--icon-dark);
 }
 
 .sui-panel-btn.sui-mod-active-defense,
 a.sui-panel-btn.sui-mod-active-defense {
-  background: url("/img/sui/panel/panel-btn-active-defense.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-active-defense.png") bottom no-repeat;
   color: var(--text-player-highlight);
 }
 
 .sui-panel-btn.sui-mod-active-offense,
 a.sui-panel-btn.sui-mod-active-offense {
-  background: url("/img/sui/panel/panel-btn-active-offense.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-active-offense.png") bottom no-repeat;
   color: var(--text-warning);
 }
 
 .sui-panel-btn.sui-mod-disabled,
 a.sui-panel-btn.sui-mod-disabled {
-  background: url("/img/sui/panel/panel-btn-disabled.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-disabled.png") bottom no-repeat;
   color: var(--accent-disabled);
 }
 
 .sui-panel-btn.sui-mod-disabled-active,
 a.sui-panel-btn.sui-mod-disabled-active {
-  background: url("/img/sui/panel/panel-btn-disabled.png") bottom no-repeat;
+  background: url("img/sui/panel/panel-btn-disabled.png") bottom no-repeat;
   color: var(--accent-destructive);
 }
 
@@ -875,54 +875,54 @@ a.sui-nav-btn:visited {
 
 .sui-theme-player .sui-panel-edge-left,
 div.sui-panel-edge-left.sui-theme-player {
-  border-image: url("/img/sui/panel/panel-edge-left-default.png") 6 0 12 6 / 6px 0 12px 6px;
+  border-image: url("img/sui/panel/panel-edge-left-default.png") 6 0 12 6 / 6px 0 12px 6px;
 }
 
 .sui-theme-player .sui-panel-edge-right,
 div.sui-panel-edge-right.sui-theme-player {
-  border-image: url("/img/sui/panel/panel-edge-right-default.png") 6 6 12 0 / 6px 6px 12px 0;
+  border-image: url("img/sui/panel/panel-edge-right-default.png") 6 6 12 0 / 6px 6px 12px 0;
 }
 
 .sui-theme-player .sui-panel-chunk,
 div.sui-panel-chunk.sui-theme-player {
-  border-image: url("/img/sui/panel/panel-edge-top-bottom-default.png") 6 0 8 0 / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-edge-top-bottom-default.png") 6 0 8 0 / 6px 0 8px 0;
 
   background: var(--surface-panel);
 }
 
 .sui-theme-player .sui-panel-connector,
 div.sui-panel-connector.sui-theme-player {
-  border-image: url("/img/sui/panel/panel-connector-default.png") 6 0 8 0 fill / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-connector-default.png") 6 0 8 0 fill / 6px 0 8px 0;
 }
 
 .sui-theme-enemy .sui-panel-edge-left,
 div.sui-panel-edge-left.sui-theme-enemy {
-  border-image: url("/img/sui/panel/panel-edge-left-medium.png") 6 0 12 6 / 6px 0 12px 6px;
+  border-image: url("img/sui/panel/panel-edge-left-medium.png") 6 0 12 6 / 6px 0 12px 6px;
 }
 
 .sui-theme-enemy .sui-panel-edge-right,
 div.sui-panel-edge-right.sui-theme-enemy {
-  border-image: url("/img/sui/panel/panel-edge-right-medium.png") 6 6 12 0 / 6px 6px 12px 0;
+  border-image: url("img/sui/panel/panel-edge-right-medium.png") 6 6 12 0 / 6px 6px 12px 0;
 }
 
 .sui-theme-enemy .sui-panel-chunk,
 div.sui-panel-chunk.sui-theme-enemy {
-  border-image: url("/img/sui/panel/panel-edge-top-bottom-medium.png") 6 0 8 0 / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-edge-top-bottom-medium.png") 6 0 8 0 / 6px 0 8px 0;
 
   background: var(--surface-panel-medium);
 }
 
 .sui-theme-enemy .sui-panel-connector,
 div.sui-panel-connector.sui-theme-enemy {
-  border-image: url("/img/sui/panel/panel-connector-medium.png") 6 0 8 0 fill / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-connector-medium.png") 6 0 8 0 fill / 6px 0 8px 0;
 }
 
 .sui-panel-connector.sui-panel-style-medium-to-default {
-  border-image: url("/img/sui/panel/panel-connector-medium-default.png") 6 0 8 0 fill / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-connector-medium-default.png") 6 0 8 0 fill / 6px 0 8px 0;
 }
 
 .sui-panel-connector.sui-panel-style-default-to-medium {
-  border-image: url("/img/sui/panel/panel-connector-default-medium.png") 6 0 8 0 fill / 6px 0 8px 0;
+  border-image: url("img/sui/panel/panel-connector-default-medium.png") 6 0 8 0 fill / 6px 0 8px 0;
 }
 
 /* ---- Panel End ---- */
@@ -952,14 +952,14 @@ div.sui-panel-connector.sui-theme-enemy {
 
 .sui-theme-player .sui-screen,
 .sui-screen.sui-theme-player {
-  border-image: url("/img/sui/screen/screen-frame-default.png") 4 4 5 4/ 4px 4px 5px 4px;
+  border-image: url("img/sui/screen/screen-frame-default.png") 4 4 5 4/ 4px 4px 5px 4px;
 }
 
 .sui-theme-neutral .sui-screen,
 .sui-screen.sui-theme-neutral,
 .sui-theme-enemy .sui-screen,
 .sui-screen.sui-theme-enemy {
-  border-image: url("/img/sui/screen/screen-frame-medium.png") 4 4 5 4/ 4px 4px 5px 4px;
+  border-image: url("img/sui/screen/screen-frame-medium.png") 4 4 5 4/ 4px 4px 5px 4px;
 }
 
 .sui-screen-nav {
@@ -1268,7 +1268,7 @@ a.sui-screen-portrait:hover {
   width: 100%;
   height: 100%;
 
-  background-image: url("/img/sui/mock/mock-droid-360.png");
+  background-image: url("img/sui/mock/mock-droid-360.png");
   background-position: -16px -4px;
 
   outline: 2px solid rgba(0, 0, 0, 0.20);
@@ -1313,7 +1313,7 @@ a.sui-screen-portrait:hover {
   width: 4px;
   height: 16px;
 
-  background-image: url("/img/sui/battery/battery-chunk-empty.png");
+  background-image: url("img/sui/battery/battery-chunk-empty.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 4px 16px;
@@ -1323,14 +1323,14 @@ a.sui-screen-portrait:hover {
 .sui-theme-player.sui-screen-battery .sui-battery-chunk.sui-mod-filled,
 .sui-theme-player .sui-battery .sui-battery-chunk.sui-mod-filled,
 .sui-theme-player.sui-battery .sui-battery-chunk.sui-mod-filled {
-  background-image: url("/img/sui/battery/battery-chunk-player.png");
+  background-image: url("img/sui/battery/battery-chunk-player.png");
 }
 
 .sui-theme-enemy .sui-screen-battery .sui-battery-chunk.sui-mod-filled,
 .sui-theme-enemy.sui-screen-battery .sui-battery-chunk.sui-mod-filled,
 .sui-theme-enemy .sui-battery .sui-battery-chunk.sui-mod-filled,
 .sui-theme-enemy.sui-battery .sui-battery-chunk.sui-mod-filled {
-  background-image: url("/img/sui/battery/battery-chunk-enemy.png");
+  background-image: url("img/sui/battery/battery-chunk-enemy.png");
 }
 
 /* ---- Screens End ---- */
@@ -1355,13 +1355,13 @@ a.sui-screen-portrait:hover {
 .sui-theme-player .sui-action-bar-btn-group {
   padding-left: 7px;
 
-  background: url("/img/sui/panel/panel-btn-group-sliver-default.png") left no-repeat;
+  background: url("img/sui/panel/panel-btn-group-sliver-default.png") left no-repeat;
 }
 
 .sui-theme-enemy .sui-action-bar-btn-group {
   padding-left: 7px;
 
-  background: url("/img/sui/panel/panel-btn-group-sliver-medium.png") left no-repeat;
+  background: url("img/sui/panel/panel-btn-group-sliver-medium.png") left no-repeat;
 }
 
 /* ---- Action Bar End ---- */
@@ -1373,7 +1373,7 @@ a.sui-screen-portrait:hover {
   width: 48px;
   flex-grow: 1;
 
-  background: url("/img/sui/panel/panel-chunk-spacer-indicator.png") top no-repeat;
+  background: url("img/sui/panel/panel-chunk-spacer-indicator.png") top no-repeat;
 }
 
 .sui-dialogue-btn-chunk {
@@ -1396,14 +1396,14 @@ a.sui-screen-portrait:hover {
   width: 44px;
   flex: 1 0 0;
 
-  background: url("/img/sui/panel/panel-chunk-spacer-btn-a.png") bottom 11px center no-repeat;
+  background: url("img/sui/panel/panel-chunk-spacer-btn-a.png") bottom 11px center no-repeat;
 }
 
 .sui-panel-chunk-spacer-btn-b {
   width: 44px;
   flex: 1 0 0;
 
-  background: url("/img/sui/panel/panel-chunk-spacer-btn-b.png") bottom 11px center no-repeat;
+  background: url("img/sui/panel/panel-chunk-spacer-btn-b.png") bottom 11px center no-repeat;
 }
 
 /* ---- Dialogue Panel End ---- */
@@ -1554,7 +1554,7 @@ a.sui-resource:visited {
   height: 44px;
   border: 1px solid var(--border-subtle);
 
-  background: url("/img/sui/mock/mock-droid-360.png") top;
+  background: url("img/sui/mock/mock-droid-360.png") top;
 }
 
 .sui-result-row-portrait-icon {
@@ -1664,31 +1664,31 @@ a.sui-resource:visited {
 }
 
 .sui-checkbox-container .sui-checkbox-display {
-  background-image: url("/img/sui/form/checkbox_false.png");
+  background-image: url("img/sui/form/checkbox_false.png");
 }
 .sui-radio-container .sui-radio-display {
-  background-image: url("/img/sui/form/radio_false.png");
+  background-image: url("img/sui/form/radio_false.png");
 }
 
 .sui-checkbox:checked ~ .sui-checkbox-display {
-  background-image: url("/img/sui/form/checkbox_true.png");
+  background-image: url("img/sui/form/checkbox_true.png");
 }
 .sui-radio:checked ~ .sui-radio-display {
-  background-image: url("/img/sui/form/radio_true.png");
+  background-image: url("img/sui/form/radio_true.png");
 }
 
 .sui-checkbox:disabled ~ .sui-checkbox-display{
-  background-image: url("/img/sui/form/checkbox_disabled_false.png");
+  background-image: url("img/sui/form/checkbox_disabled_false.png");
 }
 .sui-radio:disabled ~ .sui-radio-display{
-  background-image: url("/img/sui/form/radio_disabled_false.png");
+  background-image: url("img/sui/form/radio_disabled_false.png");
 }
 
 .sui-checkbox:disabled:checked ~ .sui-checkbox-display{
-  background-image: url("/img/sui/form/checkbox_disabled_true.png");
+  background-image: url("img/sui/form/checkbox_disabled_true.png");
 }
 .sui-radio:disabled:checked ~ .sui-radio-display{
-  background-image: url("/img/sui/form/radio_disabled_true.png");
+  background-image: url("img/sui/form/radio_disabled_true.png");
 }
 
 .sui-checkbox-container label,
@@ -1718,7 +1718,7 @@ select {
   border-radius: 0;
   margin: 2px;
 
-  background: var(--surface-default) url("/img/sui/form/caret-down-accent-secondary.png") no-repeat 10px center;
+  background: var(--surface-default) url("img/sui/form/caret-down-accent-secondary.png") no-repeat 10px center;
   background-clip: padding-box;
   box-shadow: 0 2px 0 0 var(--accent-secondary), 0 -2px 0 0 var(--accent-secondary), 2px 0 0 0 var(--accent-secondary), -2px 0 0 0 var(--accent-secondary);
   color: var(--text-body);
@@ -1729,7 +1729,7 @@ select {
 }
 
 select:disabled {
-  background: var(--surface-default) url("/img/sui/form/caret-down-accent-disabled.png") no-repeat 10px center;
+  background: var(--surface-default) url("img/sui/form/caret-down-accent-disabled.png") no-repeat 10px center;
   background-clip: padding-box;
   box-shadow: 0 2px 0 0 var(--accent-disabled), 0 -2px 0 0 var(--accent-disabled), 2px 0 0 0 var(--accent-disabled), -2px 0 0 0 var(--accent-disabled);
   color: var(--accent-disabled);
@@ -1787,7 +1787,7 @@ label.sui-input-text input[type=text]::placeholder {
 label.sui-input-text input[type=text]:focus {
   padding-left: 24px;
 
-  border-image: url("/img/sui/form/border-image-input-text-active.png") 0 0 2 24 / 0 0 2px 24px;
+  border-image: url("img/sui/form/border-image-input-text-active.png") 0 0 2 24 / 0 0 2px 24px;
 }
 
 label.sui-input-text input[type=text]:disabled {
@@ -2180,7 +2180,7 @@ label.sui-input-text input[type=text]:disabled::placeholder {
   width: 60px;
   height: 60px;
 
-  background-image: url("/img/sui/planet-card/planet-card-loading.gif");
+  background-image: url("img/sui/planet-card/planet-card-loading.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2212,7 +2212,7 @@ label.sui-input-text input[type=text]:disabled::placeholder {
 
   background-clip: padding-box;
   background-color: var(--surface-player-body);
-  border-image: url("/img/sui/status-bar/status-bar-border.png") 4 / 4px / 4px;
+  border-image: url("img/sui/status-bar/status-bar-border.png") 4 / 4px / 4px;
 }
 
 .sui-theme-player .sui-status-bar-panel,
@@ -2292,7 +2292,7 @@ label.sui-input-text input[type=text]:disabled::placeholder {
 }
 
 .sui-hud-indicator.sui-mod-primary::after {
-  background: url("/img/sui/hud/hud-indicator-caret-primary.png") center / contain no-repeat;
+  background: url("img/sui/hud/hud-indicator-caret-primary.png") center / contain no-repeat;
 }
 
 .sui-hud-indicator.sui-mod-warning {
@@ -2300,7 +2300,7 @@ label.sui-input-text input[type=text]:disabled::placeholder {
 }
 
 .sui-hud-indicator.sui-mod-warning::after {
-  background: url("/img/sui/hud/hud-indicator-caret-warning.png") center / contain no-repeat;
+  background: url("img/sui/hud/hud-indicator-caret-warning.png") center / contain no-repeat;
 }
 
 .sui-hud-indicator.sui-mod-destructive {
@@ -2308,7 +2308,7 @@ label.sui-input-text input[type=text]:disabled::placeholder {
 }
 
 .sui-hud-indicator.sui-mod-destructive::after {
-  background: url("/img/sui/hud/hud-indicator-caret-destructive.png") center / contain no-repeat;
+  background: url("img/sui/hud/hud-indicator-caret-destructive.png") center / contain no-repeat;
 }
 
 /* ---- HUD Elements End ---- */

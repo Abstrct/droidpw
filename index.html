@@ -1,0 +1,3264 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Structs UI (SUI)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/structicons.css">
+  <link rel="stylesheet" href="css/sui/sui.css">
+  <link rel="stylesheet" href="css/sui-demo.css">
+</head>
+
+<body>
+  <div class="page-panel sui-panel sui-theme-player">
+    <div class="sui-panel-edge-left"></div>
+    <div class="sui-panel-chunk sui-mod-grow sui-mod-shrink">
+      <div class="sui-screen sui-screen-full-width">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <a class="sui-screen-nav-item sui-mod-active" href="#structsUI">Structs UI</a>
+            <a class="sui-screen-nav-item" href="#text">Text</a>
+            <a class="sui-screen-nav-item" href="#icons">Icons</a>
+            <a class="sui-screen-nav-item" href="#panelButtons">Panel Buttons</a>
+            <a class="sui-screen-nav-item" href="#cheatsheet">Cheatsheet</a>
+            <a class="sui-screen-nav-item" href="#screenButtons">Screen Buttons</a>
+            <a class="sui-screen-nav-item" href="#panels">Panels</a>
+            <a class="sui-screen-nav-item" href="#screens">Screens</a>
+            <a class="sui-screen-nav-item" href="#actionBar">Action Bar</a>
+            <a class="sui-screen-nav-item" href="#dialoguePanel">Dialogue Panel</a>
+            <a class="sui-screen-nav-item" href="#pageElements">Page Elements</a>
+            <a class="sui-screen-nav-item" href="#formElements">Form Elements</a>
+            <a class="sui-screen-nav-item" href="#pageLayout">Page Layout</a>
+            <a class="sui-screen-nav-item" href="#messages">Messages</a>
+            <a class="sui-screen-nav-item" href="#planetCard">Planet Card</a>
+            <a class="sui-screen-nav-item" href="#hudElements">HUD Elements</a>
+          </div>
+        </div>
+      </div>
+      <div class="sui-screen sui-screen-full-width sui-screen-shrink">
+        <div class="sui-page-body-screen">
+          <div id="content-container" class="content">
+
+<!-- Content Start -->
+
+<section>
+  <a id="structsUI">
+    <img src="/img/sui/logo/logo-structs.gif" alt="Animated Structs logo with glitching">
+    <h1>Structs UI</h1>
+  </a>
+</section>
+
+<a id="text"><h1 class="section-header">Text</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <p class="sui-text-display">
+      Display Class - Used For Large Titles.<br>
+      Size: 16px line-height: 24px
+    </p>
+  </div>
+
+  <div class="ui-element-container">
+    <h1>
+      Display &lt;h1&gt; - Used For Large Titles.<br>
+      Size: 16px line-height: 24px
+    </h1>
+  </div>
+
+  <div class="ui-element-container">
+    <h2 class="sui-text-header">
+      Header Class - Used For Small Headers and Labels.<br>
+      Size: 8px line-height: 16px
+    </h2>
+  </div>
+
+  <div class="ui-element-container">
+    <h2>
+      Header &lt;h2&gt; - Used For Small Headers and Labels.<br>
+      Size: 8px line-height: 16px
+    </h2>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-text-paragraph">
+      Paragraph Class - Used for body text<br>
+      Size: 16px Line-height: 20px
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <p>
+      Paragraph &lt;body&gt; - Used for body text<br>
+      Size: 16px Line-height: 20px
+    <p>
+  </div>
+
+  <div class="ui-element-container">
+    <p class="sui-text-tiny">
+      Tiny text Class - Used for legal or other fine print.<br>
+      Size 8px Line-height: 12px
+    </p>
+  </div>
+
+  <div class="ui-element-container">
+    <p class="sui-text-ticker">
+      Ticker Class - Used for the ticker.<br>
+      Size 12px Line-height: 16px
+    </p>
+  </div>
+</section>
+
+
+<a id="icons"><h1 class="section-header">Icons</h1></a>
+
+<section>
+  <h2>Icon Font</h2>
+
+  <div class="ui-element-container">
+    <a href="/structicons" class="sui-screen-btn sui-mod-primary" target="_blank">Structicons Font Page</a>
+  </div>
+
+  <h2 class="sub-section-header">Full Color</h2>
+
+  <h2 class="sub-section-header">
+    Base Size: 16 x 16 px<br>
+    Display Size: 32 x 32 px
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-attacker"></i>
+      <i class="sui-icon sui-icon-defended"></i>
+      <i class="sui-icon sui-icon-defending"></i>
+    </div>
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-destroyed"></i>
+      <i class="sui-icon sui-icon-stealth-mode"></i>
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">
+    Base Size: 16 x 16 px<br>
+    Display Size: 32 x 32 px
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-counter-attack"></i>
+      <i class="sui-icon sui-icon-defender-block"></i>
+      <i class="sui-icon sui-icon-defender-counter"></i>
+    </div>
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-deflector-shield"></i>
+      <i class="sui-icon sui-icon-electronic-warfare-system"></i>
+      <i class="sui-icon sui-icon-armour"></i>
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">
+    Base Size: 12 x 12 px<br>
+    Display Size: 24 x 24 px
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-land"></i>
+      <i class="sui-icon sui-icon-space"></i>
+      <i class="sui-icon sui-icon-water"></i>
+    </div>
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-air"></i>
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">
+    Base Size: 12 x 12 px<br>
+    Display Size: 24 x 24 px
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-undiscovered-ore"></i>
+      <i class="sui-icon sui-icon-alpha-ore"></i>
+      <i class="sui-icon sui-icon-alpha-matter"></i>
+    </div>
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-inert-alpha"></i>
+      <i class="sui-icon sui-icon-energy"></i>
+      <i class="sui-icon sui-icon-shield-health"></i>
+    </div>
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-enemy-shield-health"></i>
+      <i class="sui-icon sui-icon-deployed-structs"></i>
+      <i class="sui-icon sui-icon-players"></i>
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">
+    Base Size: 8 x 8 px<br>
+    Display Size: 8 x 8 px
+  </h2>
+  <div class="grid-container">
+    <div class="grid-row">
+      <i class="sui-icon sui-icon-player-indicator"></i>
+      <i class="sui-icon sui-icon-enemy-indicator"></i>
+    </div>
+  </div>
+</section>
+
+<a id="panelButtons"><h1 class="section-header">Panel Buttons</h1></a>
+
+<section>
+  <div class="fixed-width-container-md">
+    <div class="panel-button-container">
+
+      <button class="sui-panel-btn sui-mod-default">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+
+
+      <button class="sui-panel-btn sui-mod-pressed">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-pressed">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+
+
+      <button class="sui-panel-btn sui-mod-active-defense">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-active-defense">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+
+
+      <button class="sui-panel-btn sui-mod-active-offense">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-active-offense">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+
+
+      <button class="sui-panel-btn sui-mod-disabled">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+
+
+      <button class="sui-panel-btn sui-mod-disabled-active">
+        <i class="sui-icon-md icon-defend"></i>
+      </button>
+
+      <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled-active">
+        <i class="sui-icon-md icon-ballistic-weapon"></i>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<a id="cheatsheet"><h1 class="section-header">Cheatsheet</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Cheatsheet Name</div>
+        <div class="sui-cheatsheet-costs">
+          <div class="sui-theme-player sui-battery">
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk"></div>
+            <div class="sui-battery-chunk"></div>
+            <div class="sui-battery-chunk"></div>
+          </div>
+          <div class="sui-cheatsheet-cost">
+            2 <i class="sui-icon sui-icon-energy"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-description">
+          A description of the ability or Struct
+        </div>
+
+        <div class="sui-cheatsheet-property-section">
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-smart-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Smart Weapon</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-ballistic-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Ballistic Weapon</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-dmg"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>2 DMG</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-adv-counter"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>1 DMG (+1 vs <i class="sui-icon sui-icon-water"></i>)</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-range"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+                <i class="sui-icon sui-icon-air"></i>
+                <i class="sui-icon sui-icon-space"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sui-cheatsheet-property-section">
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-smart-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Weapon Name</div>
+              <div>
+                2 DMG
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+                <i class="sui-icon sui-icon-air"></i>
+                <i class="sui-icon sui-icon-space"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-ballistic-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Weapon Name</div>
+              <div>
+                2 DMG
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+                <i class="sui-icon sui-icon-air"></i>
+                <i class="sui-icon sui-icon-space"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-counter"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Counter Attack</div>
+              <div>
+                2 DMG
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+                <i class="sui-icon sui-icon-air"></i>
+                <i class="sui-icon sui-icon-space"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-signal-jam"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Ability</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Rail Gun</div>
+        <div class="sui-cheatsheet-costs">
+          <div class="sui-theme-player sui-battery">
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-property-section">
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-ballistic-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Ballistic Weapon</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-dmg"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>2 DMG</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-range"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>
+                <i class="sui-icon sui-icon-land"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Adv. Counter</div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-description">
+          Retaliates against attacking Structs. Deals extra DMG to enemies in the same Battleground.
+        </div>
+
+        <div class="sui-cheatsheet-property-section">
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-dmg"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>1 DMG (+1 vs <i class="sui-icon sui-icon-water"></i>)</div>
+            </div>
+          </div>
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-range"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-air"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Move</div>
+        <div class="sui-cheatsheet-costs">
+          <div class="sui-theme-player sui-battery">
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-description">
+          Moves the Command Ship between Battlegrounds
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="sui-theme-enemy sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Move</div>
+        <div class="sui-cheatsheet-costs">
+          <div class="sui-battery">
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+            <div class="sui-battery-chunk sui-mod-filled"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-description">
+          Moves the Command Ship between Battlegrounds
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="sui-cheatsheet">
+      <div class="sui-cheatsheet-top-frame"></div>
+
+
+      <div class="sui-cheatsheet-title">
+        <div class="sui-cheatsheet-title-text">Stealth Bomber</div>
+        <div class="sui-cheatsheet-costs">
+          <div class="sui-cheatsheet-cost">
+            2 <i class="sui-icon sui-icon-energy"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="sui-cheatsheet-content">
+        <div class="sui-cheatsheet-property-section">
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-smart-weapon"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Anti-Matter Bomb</div>
+              <div>
+                2 DMG
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-counter"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Counter Attack</div>
+              <div>
+                2 DMG
+                <i class="sui-icon sui-icon-water"></i>
+                <i class="sui-icon sui-icon-land"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-cheatsheet-property">
+            <div class="sui-cheatsheet-property-icon">
+              <i class="sui-icon sui-icon-md icon-stealth"></i>
+            </div>
+            <div class="sui-cheatsheet-property-info">
+              <div>Stealth Mode</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<a id="screenButtons"><h1 class="section-header">Screen Buttons</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-primary">Command &lt;button&gt;</button>
+  </div>
+
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-secondary">Command &lt;button&gt;</button>
+  </div>
+
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-destructive">Command &lt;button&gt;</button>
+  </div>
+
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-disabled">Command &lt;button&gt;</button>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-primary">Command &lt;a&gt;</a>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">Command &lt;a&gt;</a>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-destructive">Command &lt;a&gt;</a>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-disabled">Command &lt;a&gt;</a>
+  </div>
+
+  <h2 class="sub-section-header">Button Details and Variations</h2>
+
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-primary">
+      <i class="sui-icon-md icon-computer"></i>
+      Activate Device
+    </button>
+  </div>
+
+  <div class="ui-element-container">
+    <button class="sui-screen-btn sui-mod-primary"><i class="sui-icon-md icon-incoming"></i></button>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">
+      <i class="sui-icon-md icon-computer"></i>
+      Activate Device
+    </a>
+  </div>
+
+  <div class="ui-element-container">
+    <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary"><i class="sui-icon-md icon-incoming"></i></a>
+  </div>
+
+  <div class="fixed-width-container-sm">
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <button class="sui-screen-btn sui-mod-primary">Command &lt;button&gt;</button>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <button class="sui-screen-btn sui-mod-secondary">Depart</button>
+        <button class="sui-screen-btn sui-mod-primary">Command</button>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <button class="sui-screen-btn sui-mod-primary">
+          <i class="sui-icon-md icon-key"></i>
+          <span>Recovery Key</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="fixed-width-container-xs">
+
+        <div class="sui-screen-btn-flex-wrapper">
+          <button class="sui-screen-btn sui-mod-primary">
+            <i class="sui-icon-md icon-ballistic-weapon"></i>
+            <span>Do a thing</span>
+          </button>
+          <button class="sui-screen-btn sui-mod-primary">Something else</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <button class="sui-screen-btn sui-mod-secondary">Depart &lt;a&gt;</button>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <a class="sui-screen-btn sui-mod-secondary">Depart</a>
+        <a class="sui-screen-btn sui-mod-primary">Command</a>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="sui-screen-btn-flex-wrapper">
+        <button class="sui-screen-btn sui-mod-secondary">
+          <i class="sui-icon-md icon-key"></i>
+          <span>Recovery Key</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="fixed-width-container-xs">
+
+        <div class="sui-screen-btn-flex-wrapper">
+          <button class="sui-screen-btn sui-mod-secondary">
+            <i class="sui-icon-md icon-ballistic-weapon"></i>
+            <span>Do a thing</span>
+          </button>
+          <button class="sui-screen-btn sui-mod-secondary">Something else</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Navigation Buttons</h2>
+
+  <div class="ui-element-container">
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-col">
+
+          <a href="javascript: void(0)" class="sui-nav-btn">
+            <i class="sui-icon-sm icon-chevron-left sui-text-secondary"></i>
+            Previous
+          </a>
+
+        </div>
+        <div class="grid-col">
+
+          <a href="javascript: void(0)" class="sui-nav-btn">
+            Next
+            <i class="sui-icon-sm icon-chevron-right sui-text-secondary"></i>
+          </a>
+
+        </div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-col">
+
+          <a href="javascript: void(0)" class="sui-nav-btn">
+            <i class="sui-icon-sm icon-chevron-left sui-text-primary"></i>
+            Previous
+          </a>
+
+        </div>
+        <div class="grid-col">
+
+          <a href="javascript: void(0)" class="sui-nav-btn">
+            Next
+            <i class="sui-icon-sm icon-chevron-right sui-text-primary"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<a id="panels"><h1 class="section-header">Panels</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-player">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-default.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-default.png" alt="Actions">
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-medium.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-medium.png" alt="Actions">
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel">
+        <div class="sui-panel-edge-left sui-theme-enemy"></div>
+        <div class="sui-panel-chunk sui-theme-enemy">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-medium.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector sui-theme-enemy"></div>
+        <div class="sui-panel-chunk sui-theme-enemy">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-medium.png" alt="Actions">
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-default.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector sui-theme-player"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-default.png" alt="Actions">
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel">
+        <div class="sui-panel-edge-left sui-theme-player"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-default.png" alt="Actions">
+        </div>
+        <div class="sui-panel-connector sui-theme-player"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-default.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector sui-panel-style-default-to-medium"></div>
+        <div class="sui-panel-chunk sui-theme-enemy">
+          <img src="/img/sui/panel/panel-chunk-mock-profile-medium.png" alt="Profile">
+        </div>
+        <div class="sui-panel-connector sui-theme-enemy"></div>
+        <div class="sui-panel-chunk sui-theme-enemy">
+          <img src="/img/sui/panel/panel-chunk-mock-actions-medium.png" alt="Actions">
+        </div>
+        <div class="sui-panel-edge-right sui-theme-enemy"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="screens"><h1 class="section-header">Screens</h1></a>
+
+<h2 class="sub-section-header">Navigation Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-screen-full-width sui-theme-player">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <a class="sui-screen-nav-item sui-mod-active" href="javascript: void(0)">Fleet</a>
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Guild</a>
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Account</a>
+          </div>
+          <a class="sui-screen-nav-close" href="javascript: void(0)">
+            <i class="sui-icon-sm icon-close"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-screen-full-width sui-theme-player">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Fleet</a>
+            <a class="sui-screen-nav-item sui-mod-active" href="javascript: void(0)">Guild</a>
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Account</a>
+          </div>
+          <a class="sui-screen-nav-close" href="javascript: void(0)">
+            <i class="sui-icon-sm icon-close"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-screen-full-width sui-theme-player">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Fleet</a>
+            <a class="sui-screen-nav-item" href="javascript: void(0)">Guild</a>
+            <a class="sui-screen-nav-item sui-mod-active" href="javascript: void(0)">Account</a>
+          </div>
+          <a class="sui-screen-nav-close" href="javascript: void(0)">
+            <i class="sui-icon-sm icon-close"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Title Variant</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-screen-full-width sui-theme-player">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <div class="sui-screen-nav-item sui-mod-active">Login</div>
+          </div>
+          <a class="sui-screen-nav-close" href="javascript: void(0)">
+            <i class="sui-icon-sm icon-close"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Non-Dismissible Variant</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-screen-full-width sui-theme-player">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <div class="sui-screen-nav-item sui-mod-active">Structs</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Properties Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-properties">
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-counter"></i>
+        </a>
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-armour"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-enemy">
+      <div class="sui-screen-properties">
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-counter"></i>
+        </a>
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-armour"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-properties">
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-counter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-properties">
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-counter"></i>
+        </a>
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-signal-jam"></i>
+        </a>
+        <a href="javascript: void(0)">
+          <i class="sui-icon-md icon-defend"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Info Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-info">Information</div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-info sui-mod-inverted">Information</div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-enemy">
+      <div class="sui-screen-info">Information</div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-enemy">
+      <div class="sui-screen-info sui-mod-inverted">Information</div>
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Dialogue Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-theme-player">
+        <div class="sui-screen-dialogue">
+          <strong>Struct Command:</strong>
+          Please stop doing shit wrong. Do it right instead.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container fixed-width-container-md">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-theme-enemy">
+        <div class="sui-screen-dialogue">
+          <strong>Struct Command:</strong>
+          Please stop doing shit wrong. Do it right instead.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-md">
+
+      <div class="sui-screen sui-theme-player">
+        <div class="sui-screen-dialogue sui-theme-neutral">
+          <strong>Struct Command:</strong>
+          Please stop doing shit wrong. Do it right instead.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Portrait Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <a href="javascript: void(0)" class="sui-screen-portrait">
+        <div class="sui-screen-portrait-image"></div>
+        <i class="sui-icon-md icon-menu"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-enemy">
+      <a href="javascript: void(0)" class="sui-screen-portrait">
+        <div class="sui-screen-portrait-image"></div>
+        <i class="sui-icon-md icon-info"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Indicator Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-indicator">
+        <i class="sui-icon sui-icon-alpha-ore"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-indicator">
+        <i class="sui-icon-md icon-alert sui-text-warning"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-indicator">
+        <div class="sui-screen-portrait-image"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2 class="sub-section-header">Battery Screen</h2>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-player">
+      <div class="sui-screen-battery">
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk"></div>
+        <div class="sui-battery-chunk"></div>
+        <div class="sui-battery-chunk"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-screen sui-theme-enemy">
+      <div class="sui-screen-battery">
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk sui-mod-filled"></div>
+        <div class="sui-battery-chunk"></div>
+        <div class="sui-battery-chunk"></div>
+        <div class="sui-battery-chunk"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="actionBar"><h1 class="section-header">Action Bar</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-player">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen">
+            <a href="javascript: void(0)" class="sui-screen-portrait">
+              <div class="sui-screen-portrait-image"></div>
+              <i class="sui-icon-md icon-menu"></i>
+            </a>
+          </div>
+          <div class="sui-screen">
+            <div class="sui-screen-battery">
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen">
+            <a href="javascript: void(0)" class="sui-screen-portrait">
+              <div class="sui-screen-portrait-image"></div>
+              <i class="sui-icon-md icon-info"></i>
+            </a>
+          </div>
+          <div class="sui-screen">
+            <div class="sui-screen-battery">
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-player">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-info">Information</div>
+          </div>
+
+          <div class="sui-action-bar-bottom-row">
+
+            <div class="sui-screen">
+              <div class="sui-screen-properties">
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-counter"></i>
+                </a>
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-armour"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="sui-action-bar-btn-group">
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-ballistic-weapon"></i>
+              </a>
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-defend"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-info">Information</div>
+          </div>
+
+          <div class="sui-action-bar-bottom-row">
+
+            <div class="sui-screen">
+              <div class="sui-screen-properties">
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-counter"></i>
+                </a>
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-armour"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="sui-action-bar-btn-group">
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled">
+                <i class="sui-icon-md icon-ballistic-weapon"></i>
+              </a>
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled">
+                <i class="sui-icon-md icon-defend"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-player">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen">
+            <a href="javascript: void(0)" class="sui-screen-portrait">
+              <div class="sui-screen-portrait-image"></div>
+              <i class="sui-icon-md icon-menu"></i>
+            </a>
+          </div>
+          <div class="sui-screen">
+            <div class="sui-screen-battery">
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk">
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-info">Information</div>
+          </div>
+
+          <div class="sui-action-bar-bottom-row">
+
+            <div class="sui-screen">
+              <div class="sui-screen-properties">
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-counter"></i>
+                </a>
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-armour"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="sui-action-bar-btn-group">
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-ballistic-weapon"></i>
+              </a>
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-defend"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-panel-wrapper-fit-content">
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-info">Information</div>
+          </div>
+
+          <div class="sui-action-bar-bottom-row">
+
+            <div class="sui-screen">
+              <div class="sui-screen-properties">
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-counter"></i>
+                </a>
+                <a href="javascript: void(0)">
+                  <i class="sui-icon-md icon-armour"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="sui-action-bar-btn-group">
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled">
+                <i class="sui-icon-md icon-ballistic-weapon"></i>
+              </a>
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-disabled">
+                <i class="sui-icon-md icon-defend"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk">
+
+          <div class="sui-screen">
+            <a href="javascript: void(0)" class="sui-screen-portrait">
+              <div class="sui-screen-portrait-image"></div>
+              <i class="sui-icon-md icon-info"></i>
+            </a>
+          </div>
+          <div class="sui-screen">
+            <div class="sui-screen-battery">
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk sui-mod-filled"></div>
+              <div class="sui-battery-chunk"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="sui-panel-edge-right"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a id="dialoguePanel"><h1 class="section-header">Dialogue Panel</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <!-- Left Panel Start -->
+
+          <div class="sui-screen sui-theme-player">
+            <div class="sui-screen-indicator">
+              <div class="sui-screen-portrait-image skull-head"></div>
+            </div>
+          </div>
+
+          <div class="sui-panel-chunk-spacer-indicator"></div>
+
+          <!-- Left Panel End -->
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk sui-mod-grow">
+          <!-- Middle Panel Start -->
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-dialogue sui-theme-neutral">
+              <strong>Struct Command:</strong>
+              Please stop doing stuff wrong. Do it right instead.
+            </div>
+          </div>
+
+          <!-- Middle Panel End -->
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <!-- Right Panel Start -->
+
+          <div class="sui-dialogue-btn-chunk">
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-a"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-okay"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel End -->
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <!-- Left Panel Start -->
+
+          <div class="sui-screen sui-theme-player">
+            <div class="sui-screen-indicator">
+              <div class="sui-screen-portrait-image skull-head"></div>
+            </div>
+          </div>
+
+          <div class="sui-panel-chunk-spacer-indicator"></div>
+
+          <!-- Left Panel End -->
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk sui-mod-grow">
+          <!-- Middle Panel Start -->
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-dialogue sui-theme-neutral">
+              Please stop.
+            </div>
+          </div>
+
+          <!-- Middle Panel End -->
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <!-- Right Panel Start -->
+
+          <div class="sui-dialogue-btn-chunk">
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-a"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-okay"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel End -->
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <!-- Left Panel Start -->
+
+          <div class="sui-screen sui-theme-player">
+            <div class="sui-screen-indicator">
+              <div class="sui-screen-portrait-image skull-head"></div>
+            </div>
+          </div>
+
+          <div class="sui-panel-chunk-spacer-indicator"></div>
+
+          <!-- Left Panel End -->
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk sui-mod-grow">
+          <!-- Middle Panel Start -->
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-dialogue sui-theme-neutral">
+              Please stop.
+            </div>
+          </div>
+
+          <!-- Middle Panel End -->
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <!-- Right Panel Start -->
+
+          <div class="sui-dialogue-btn-chunk">
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-b"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-arrow sui-flip-horizontal"></i>
+              </a>
+            </div>
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-a"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-okay"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel End -->
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <!-- Left Panel Start -->
+
+          <div class="sui-screen sui-theme-player">
+            <div class="sui-screen-indicator">
+              <div class="sui-screen-portrait-image skull-head"></div>
+            </div>
+          </div>
+
+          <div class="sui-panel-chunk-spacer-indicator"></div>
+
+          <!-- Left Panel End -->
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk sui-mod-grow">
+          <!-- Middle Panel Start -->
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-dialogue sui-theme-neutral">
+              <strong>Struct Command:</strong>
+              Please stop doing stuff wrong. Do it right instead.
+            </div>
+          </div>
+
+          <!-- Middle Panel End -->
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <!-- Right Panel Start -->
+
+          <div class="sui-dialogue-btn-chunk">
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-b"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-arrow sui-flip-horizontal"></i>
+              </a>
+            </div>
+
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-a"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-okay"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel End -->
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-panel sui-theme-enemy">
+        <div class="sui-panel-edge-left"></div>
+        <div class="sui-panel-chunk">
+          <!-- Left Panel Start -->
+
+          <div class="sui-screen sui-theme-player">
+            <div class="sui-screen-indicator">
+              <div class="sui-screen-portrait-image skull-head"></div>
+            </div>
+          </div>
+
+          <div class="sui-panel-chunk-spacer-indicator"></div>
+
+          <!-- Left Panel End -->
+        </div>
+        <div class="sui-panel-connector"></div>
+        <div class="sui-panel-chunk sui-mod-grow">
+          <!-- Middle Panel Start -->
+
+          <div class="sui-screen sui-screen-full-width">
+            <div class="sui-screen-dialogue sui-theme-neutral">
+              <strong>Struct Command:</strong>
+              Please stop doing stuff wrong. Do it right instead.
+              Please stop doing stuff wrong. Do it right instead.
+            </div>
+          </div>
+
+          <!-- Middle Panel End -->
+        </div>
+        <div class="sui-panel-connector sui-panel-style-medium-to-default"></div>
+        <div class="sui-panel-chunk sui-theme-player">
+          <!-- Right Panel Start -->
+
+          <div class="sui-dialogue-btn-chunk">
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-b"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-arrow sui-flip-horizontal"></i>
+              </a>
+            </div>
+
+            <div class="sui-dialogue-btn-chunk-col">
+              <div class="sui-panel-chunk-spacer-btn-a"></div>
+
+              <a href="javascript: void(0)" class="sui-panel-btn sui-mod-default">
+                <i class="sui-icon-md icon-okay"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Panel End -->
+        </div>
+        <div class="sui-panel-edge-right sui-theme-player"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<a id="pageElements"><h1 class="section-header">Page Elements</h1></a>
+
+<section>
+  <h2 class="sub-section-header">Page Header</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-xl">
+
+      <div class="sui-page-header">
+        <a href="javascript: void(0)" class="sui-nav-btn">
+          <i class="sui-icon-sm icon-chevron-left sui-text-secondary"></i>
+          PREVIOUS
+        </a>
+
+        <div class="sui-page-header-resources">
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>32/50</span>
+            <i class="sui-icon sui-icon-energy"></i>
+          </a>
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>3</span>
+            <i class="sui-icon sui-icon-alpha-matter"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Tooltip</h2>
+
+  <div class="ui-element-container">
+    <div class="sui-tooltip sui-mod-show">
+      Tooltips display 1 - 2 sentences of information.
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Resources</h2>
+
+  <div class="ui-element-container">
+    <a
+      id="resource1"
+      href="javascript: void(0)"
+      class="sui-resource"
+      data-sui-tooltip="Alpha Matter"
+    >
+      <span>1</span>
+      <i class="sui-icon sui-icon-alpha-matter"></i>
+    </a>
+  </div>
+
+  <div class="ui-element-container">
+    <a
+      id="resource2"
+      href="javascript: void(0)"
+      class="sui-resource"
+      data-sui-tooltip="Alpha Matter"
+      data-sui-mod-placement="bottom"
+    >
+      <i class="sui-icon sui-icon-alpha-matter"></i>
+      <span>1</span>
+    </a>
+  </div>
+
+  <h2 class="sub-section-header">Result Rows</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-xl">
+
+      <div class="sui-result-rows">
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+                <span class="sui-text-hint">PID #7283</span>
+              </div>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-alpha-matter"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+              </div>
+              <span class="sui-badge sui-mod-default">Fleet Away</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-icon">
+                <i class="sui-icon-md icon-unknown"></i>
+              </div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                Non-Player Address
+                <i class="sui-icon-sm icon-tip sui-text-secondary"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-matter"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-icon">
+                <i class="sui-icon-md icon-unknown"></i>
+              </div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                SN.CORPORATION
+              </div>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>1.12k</span>
+                <i class="sui-icon sui-icon-players"></i>
+              </div>
+              <div class="sui-resource">
+                <span>1.12k</span>
+                <i class="sui-icon sui-icon-alpha-matter"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-icon">
+                <i class="sui-icon-md icon-incoming"></i>
+              </div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                Transaction #00134
+              </div>
+              <span class="sui-badge sui-mod-default">Completed</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>1.12k</span>
+                <i class="sui-icon sui-icon-alpha-matter"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Table Format</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-xl">
+
+      <div class="sui-result-rows sui-result-table">
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+              </div>
+              <span class="sui-badge sui-mod-default">Fleet Away</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+              </div>
+              <span class="sui-badge sui-mod-default">Fleet Away</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> THEDEVILSROBOT<br>
+              </div>
+              <span class="sui-badge sui-mod-warning">On Station</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> Abstract<br>
+              </div>
+              <span class="sui-badge sui-mod-warning">On Station</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+
+
+        <div class="sui-result-row">
+          <div class="sui-result-row-left-section">
+            <div class="sui-result-row-portrait">
+              <div class="sui-result-row-portrait-image"></div>
+            </div>
+            <div class="sui-result-row-player-info">
+              <div class="sui-text-label-block">
+                <span class="sui-mod-secondary">[TAG]</span> Abstract<br>
+              </div>
+              <span class="sui-badge sui-mod-default">Fleet Away</span>
+            </div>
+          </div>
+          <div class="sui-result-row-right-section">
+            <div class="sui-result-row-resources">
+              <div class="sui-resource">
+                <span>01</span>
+                <i class="sui-icon sui-icon-undiscovered-ore"></i>
+              </div>
+              <div class="sui-resource">
+                <span>02</span>
+                <i class="sui-icon sui-icon-alpha-ore"></i>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Badges</h2>
+
+  <div class="ui-element-container">
+    <span class="sui-badge sui-mod-default">Fleet Away</span>
+  </div>
+
+  <div class="ui-element-container">
+    <span class="sui-badge sui-mod-warning">On Station</span>
+  </div>
+
+  <div class="ui-element-container">
+    <span class="sui-badge sui-mod-solid">Fleet</span>
+  </div>
+
+</section>
+
+<a id="formElements"><h1 class="section-header">Form Elements</h1></a>
+
+<section>
+  <form>
+    <div class="ui-element-container">
+      <div class="grid-container">
+        <div class="grid-row">
+
+          <div class="sui-checkbox-container">
+            <input type="checkbox" class="sui-checkbox" name="testCheckbox" id="testCheckbox">
+            <span class="sui-checkbox-display"></span>
+            <label for="testCheckbox">A checkbox option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-checkbox-container">
+            <input type="checkbox" class="sui-checkbox" name="testCheckbox2" id="testCheckbox2">
+            <span class="sui-checkbox-display"></span>
+            <label for="testCheckbox2">A checkbox option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-checkbox-container">
+            <input type="checkbox" class="sui-checkbox" name="testCheckbox3" id="testCheckbox3" disabled="disabled">
+            <span class="sui-checkbox-display"></span>
+            <label for="testCheckbox3">A checkbox option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-checkbox-container">
+            <input type="checkbox" class="sui-checkbox" name="testCheckbox4" id="testCheckbox4" disabled="disabled" checked="checked">
+            <span class="sui-checkbox-display"></span>
+            <label for="testCheckbox4">A checkbox option</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="grid-container">
+        <div class="grid-row">
+
+          <div class="sui-radio-container">
+            <input type="radio" class="sui-radio" name="testRadio1" id="test1Option1">
+            <span class="sui-radio-display"></span>
+            <label for="test1Option1">A radio option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-radio-container">
+            <input type="radio" class="sui-radio" name="testRadio1" id="test1Option2">
+            <span class="sui-radio-display"></span>
+            <label for="test1Option2">A radio option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-radio-container">
+            <input type="radio" class="sui-radio" name="testRadio2" id="test2Option1" disabled="disabled">
+            <span class="sui-radio-display"></span>
+            <label for="test2Option1">A radio option</label>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-radio-container">
+            <input type="radio" class="sui-radio" name="testRadio2" id="test2Option2" disabled="disabled" checked="checked">
+            <span class="sui-radio-display"></span>
+            <label for="test2Option2">A radio option</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="grid-container">
+        <div class="grid-row">
+
+          <select>
+            <option>Select an Option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+        </div>
+        <div class="grid-row">
+
+          <select disabled="disabled">
+            <option>Select an Option</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="fixed-width-container-md ">
+
+        <label class="sui-input-text" for="testInputText">
+          <span>Min. Vulnerable Ore</span>
+          <input
+            type="text"
+            name="testInputText"
+            id="testInputText"
+            placeholder="Hint Text"
+          >
+        </label>
+
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="fixed-width-container-md ">
+
+        <label class="sui-input-text" for="testInputTextDisabled">
+          <span>Min. Vulnerable Ore</span>
+          <input
+            type="text"
+            name="testInputText"
+            id="testInputTextDisabled"
+            placeholder="Hint Text"
+            disabled="disabled"
+          >
+        </label>
+
+        <div class="sui-input-text-warning sui-mod-show">
+          You did it wrong.
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ui-element-container">
+      <div class="grid-container">
+        <div class="grid-row">
+
+          <div class="sui-input-stepper">
+            <button class="sui-screen-btn sui-mod-secondary">
+              <i class="sui-icon sui-icon-md icon-subtract"></i>
+            </button>
+            <input
+              id="inputStepper1"
+              name="inputStepper1"
+              type="number"
+              step="1"
+              min="0"
+              max="99"
+              value="0"
+            >
+            <button class="sui-screen-btn sui-mod-secondary">
+              <i class="sui-icon sui-icon-md icon-add"></i>
+            </button>
+          </div>
+
+        </div>
+        <div class="grid-row">
+
+          <div class="sui-input-stepper">
+            <button class="sui-screen-btn sui-mod-secondary">
+              <i class="sui-icon sui-icon-md icon-subtract"></i>
+            </button>
+            <input
+              id="inputStepper2"
+              name="inputStepper2"
+              type="number"
+              step="1"
+              min="0"
+              max="99"
+              value="0"
+              disabled
+            >
+            <button class="sui-screen-btn sui-mod-secondary">
+              <i class="sui-icon sui-icon-md icon-add"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </form>
+</section>
+
+<a id="pageLayout"><h1 class="section-header">Page Layout</h1></a>
+
+<section>
+  <div class="fixed-width-container-xl fixed-height">
+    <div class="sui-panel sui-theme-player">
+      <div class="sui-panel-edge-left"></div>
+      <div class="sui-panel-chunk sui-mod-grow sui-mod-shrink">
+
+        <!-- Nav Start -->
+
+        <div class="sui-screen sui-screen-full-width">
+          <div class="sui-screen-nav">
+            <div class="sui-screen-nav-items">
+              <a class="sui-screen-nav-item" href="javascript: void(0)">Fleet</a>
+              <a class="sui-screen-nav-item sui-mod-active" href="javascript: void(0)">Guild</a>
+              <a class="sui-screen-nav-item" href="javascript: void(0)">Account</a>
+            </div>
+            <a class="sui-screen-nav-close" href="javascript: void(0)">
+              <i class="sui-icon-sm icon-close"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Nav End -->
+
+        <!-- Page Screen Body Start -->
+
+        <div class="sui-screen sui-screen-full-width sui-screen-shrink">
+          <div class="sui-page-body-screen">
+            <div class="sui-page-body-screen-content">
+
+              <!-- Page Header Start -->
+
+              <div class="sui-page-header">
+                <a href="javascript: void(0)" class="sui-nav-btn">
+                  <i class="sui-icon-sm icon-chevron-left sui-text-secondary"></i>
+                  Member Roster
+                </a>
+
+                <div class="sui-page-header-resources">
+                  <a href="javascript: void(0)" class="sui-resource">
+                    <span>32/50</span>
+                    <i class="sui-icon sui-icon-energy"></i>
+                  </a>
+                  <a href="javascript: void(0)" class="sui-resource">
+                    <span>3</span>
+                    <i class="sui-icon sui-icon-alpha-matter"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Page Header End -->
+
+              <!-- Screen Body Start -->
+
+              <div class="sui-screen-body">
+
+                <!-- Content Start -->
+
+                <div class="sui-result-rows sui-result-table">
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> DETHMASHENE<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> TXUE<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> NETLAG<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> SAINT<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> ABSTRACT<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> DETHMASHENE<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> TXUE<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> NETLAG<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="sui-result-row">
+                    <div class="sui-result-row-left-section">
+                      <div class="sui-result-row-portrait">
+                        <div class="sui-result-row-portrait-image"></div>
+                      </div>
+                      <div class="sui-result-row-player-info">
+                        <div class="sui-text-label-block">
+                          <span class="sui-mod-secondary">[TAG]</span> SAINT<br>
+                          <span class="sui-text-hint">PID #7283</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sui-result-row-right-section">
+                      <div class="sui-result-row-resources">
+                        <div class="sui-resource">
+                          <span>01</span>
+                          <i class="sui-icon sui-icon-alpha-matter"></i>
+                        </div>
+                      </div>
+                      <a href="javascript:void(0)" class="sui-screen-btn sui-mod-secondary">View</a>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+                <!-- Content End -->
+
+              </div>
+
+              <!-- Screen Body End -->
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Screen Body End -->
+
+
+      </div>
+      <div class="sui-panel-edge-right"></div>
+    </div>
+  </div>
+</section>
+
+<a id="messages"><h1 class="section-header">Messages</h1></a>
+
+<section>
+  <h2 class="sub-section-header">System Modal</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-modal">
+        <div class="sui-message-system-modal-frame">
+          <div class="sui-message-system-modal-frame-left">
+            <div class="sui-message-system-modal-frame-left-top"></div>
+            <div class="sui-message-system-modal-frame-left-middle">
+              <i class="sui-icon sui-icon-md icon-deploy"></i>
+            </div>
+            <div class="sui-message-system-modal-frame-left-bottom"></div>
+          </div>
+          <div class="sui-message-system-model-frame-center">
+            Your Command Ship has arrived on
+            an Uncharted Planet, ready to be
+            harvested for Alpha Matter.<br>
+            <br>
+            Planets are divided into four
+            Battlegrounds. Space, Air, Land and
+            Water.<br>
+            <br>
+            Start by building a Mining Facility on
+            Land.
+          </div>
+        </div>
+        <div class="sui-message-system-modal-cta">
+          <div class="sui-message-system-modal-cta-btn-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">Cancel</a>
+          </div>
+          <div class="sui-message-system-modal-cta-btn-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-primary">Confirm</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">System Alert</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-alert sui-mod-minimized sui-mod-primary">
+        <div class="sui-message-system-alert-icon-container">
+          <i class="sui-icon sui-icon-md icon-deploy"></i>
+        </div>
+        <div class="sui-message-system-alert-text-container">
+          This is an alert. It contains text about alerts.
+        </div>
+        <div class="sui-message-system-alert-close-container">
+          <i class="sui-icon sui-icon-sm icon-close"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-alert sui-mod-primary">
+        <div class="sui-message-system-alert-icon-container">
+          <i class="sui-icon sui-icon-md icon-deploy"></i>
+        </div>
+        <div class="sui-message-system-alert-text-container">
+          This is an alert. It contains text about alerts.
+        </div>
+        <div class="sui-message-system-alert-close-container">
+          <i class="sui-icon sui-icon-sm icon-close"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-alert sui-mod-destructive">
+        <div class="sui-message-system-alert-icon-container">
+          <i class="sui-icon sui-icon-md icon-deploy"></i>
+        </div>
+        <div class="sui-message-system-alert-text-container">
+          This is an alert. It contains text about alerts.
+        </div>
+        <div class="sui-message-system-alert-close-container">
+          <i class="sui-icon sui-icon-sm icon-close"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-alert sui-mod-warning">
+        <div class="sui-message-system-alert-icon-container">
+          <i class="sui-icon sui-icon-md icon-deploy"></i>
+        </div>
+        <div class="sui-message-system-alert-text-container">
+          This is an alert. It contains text about alerts.
+        </div>
+        <div class="sui-message-system-alert-close-container">
+          <i class="sui-icon sui-icon-sm icon-close"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-system-alert sui-mod-secondary">
+        <div class="sui-message-system-alert-icon-container">
+          <i class="sui-icon sui-icon-md icon-deploy"></i>
+        </div>
+        <div class="sui-message-system-alert-text-container">
+          This is an alert. It contains text about alerts.
+        </div>
+        <div class="sui-message-system-alert-close-container">
+          <i class="sui-icon sui-icon-sm icon-close"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">Inline Alert</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-inline-alert sui-mod-primary">
+        <i class="sui-icon sui-icon-md icon-info"></i>
+        <div class="sui-message-inline-alert-text">
+          This is an alert.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-inline-alert sui-mod-warning">
+        <i class="sui-icon sui-icon-md icon-info"></i>
+        <div class="sui-message-inline-alert-text">
+          This is an alert.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-inline-alert sui-mod-destructive">
+        <i class="sui-icon sui-icon-md icon-info"></i>
+        <div class="sui-message-inline-alert-text">
+          This is an alert.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-lg">
+
+      <div class="sui-message-inline-alert sui-mod-secondary">
+        <i class="sui-icon sui-icon-md icon-info"></i>
+        <div class="sui-message-inline-alert-text">
+          This is an alert.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<a id="planetCard"><h1 class="section-header">Planet Card</h1></a>
+
+<section>
+  <div class="ui-element-container">
+    <div class="fixed-width-container-sm">
+
+      <div class="sui-planet-card">
+
+        <div class="sui-planet-card-header">
+          <div class="sui-planet-card-header-label">
+            <i class="sui-icon sui-icon-md icon-planet"></i>
+            <div class="sui-planet-card-header-label-title">
+              <span>
+                Alpha Base
+              </span>
+              <span>
+                Freyus-9
+              </span>
+            </div>
+          </div>
+
+          <span class="sui-badge sui-mod-solid">Fleet</span>
+        </div>
+
+
+        <div class="sui-planet-card-body">
+          <div class="sui-planet-card-body-content">
+            <div class="sui-planet-card-status-group">
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-undiscovered-ore"></i>
+                  <span>01</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-alpha-ore"></i>
+                  <span>01</span>
+                </a>
+              </div>
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-shield-health"></i>
+                  <span>100%</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-deployed-structs"></i>
+                  <span>12/16</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="sui-planet-card-alert">
+              <i class="sui-icon sui-icon-lg icon-alert sui-text-warning"></i>
+              Refinery Idle
+            </div>
+
+            <div class="sui-planet-card-message">
+              <i class="sui-icon sui-icon-xl icon-planet sui-text-primary"></i>
+              Your fleet will return to your Alpha Base.
+            </div>
+          </div>
+
+          <div class="sui-screen-btn-flex-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">Depart</a>
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-primary">Command</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-sm">
+
+      <div class="sui-planet-card">
+
+        <div class="sui-planet-card-header">
+          <div class="sui-planet-card-header-label">
+            <i class="sui-icon sui-icon-md icon-planet"></i>
+            <div class="sui-planet-card-header-label-title">
+              <span>
+                Alpha Base
+              </span>
+              <span>
+                Freyus-9
+              </span>
+            </div>
+          </div>
+
+          <span class="sui-badge sui-mod-solid">Fleet</span>
+        </div>
+
+
+        <div class="sui-planet-card-body">
+          <div class="sui-planet-card-loading">
+            <div class="sui-planet-card-loading-animation"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-sm">
+
+      <div class="sui-planet-card">
+
+        <div class="sui-planet-card-header">
+          <div class="sui-planet-card-header-label">
+            <i class="sui-icon sui-icon-md icon-planet"></i>
+            <div class="sui-planet-card-header-label-title">
+              <span>
+                Alpha Base
+              </span>
+              <span>
+                Freyus-9
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sui-planet-card-body">
+          <div class="sui-planet-card-body-content">
+            <div class="sui-planet-card-status-group">
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-undiscovered-ore"></i>
+                  <span>01</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-alpha-ore"></i>
+                  <span>01</span>
+                </a>
+              </div>
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-shield-health"></i>
+                  <span>100%</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-deployed-structs"></i>
+                  <span>12/16</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-screen-btn-flex-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-primary">Command</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-sm">
+
+      <div class="sui-planet-card">
+
+        <div class="sui-planet-card-header">
+          <div class="sui-planet-card-header-label">
+            <i class="sui-icon sui-icon-md icon-raid"></i>
+            <div class="sui-planet-card-header-label-title">
+              <span>
+                Raid
+              </span>
+              <span>
+                Freyus-9
+              </span>
+            </div>
+          </div>
+
+          <span class="sui-badge sui-mod-solid">Fleet</span>
+        </div>
+
+
+        <div class="sui-planet-card-body">
+          <div class="sui-planet-card-body-content">
+            <div class="sui-planet-card-status-group">
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-undiscovered-ore"></i>
+                  <span>01</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-alpha-ore"></i>
+                  <span>01</span>
+                </a>
+              </div>
+              <div class="sui-planet-card-status-group-col">
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-enemy-shield-health"></i>
+                  <span>100%</span>
+                </a>
+                <a href="javascript: void(0)" class="sui-resource">
+                  <i class="sui-icon sui-icon-deployed-structs"></i>
+                  <span>12/16</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sui-screen-btn-flex-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">Depart</a>
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-primary">Command</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-sm">
+
+      <div class="sui-planet-card">
+
+        <div class="sui-planet-card-header">
+          <div class="sui-planet-card-header-label">
+            <i class="sui-icon sui-icon-md icon-raid"></i>
+            <div class="sui-planet-card-header-label-title">
+              <span>
+                Raid
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="sui-planet-card-body">
+          <div class="sui-planet-card-body-content">
+            <div class="sui-planet-card-message">
+              No raid active.
+            </div>
+          </div>
+
+          <div class="sui-screen-btn-flex-wrapper">
+            <a href="javascript: void(0)" class="sui-screen-btn sui-mod-secondary">Depart</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<a id="hudElements"><h1 class="section-header">Hud Elements</h1></a>
+
+<section>
+  <h2 class="sub-section-header">Status Bar</h2>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-xl">
+
+      <div class="sui-status-bar">
+        <div class="sui-status-bar-panel">
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>32/50</span>
+            <i class="sui-icon sui-icon-energy"></i>
+          </a>
+        </div>
+
+
+        <div class="sui-status-bar-panel">
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>100</span>
+            <i class="sui-icon sui-icon-shield-health"></i>
+          </a>
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>3</span>
+            <i class="sui-icon sui-icon-alpha-ore"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="fixed-width-container-xl">
+
+      <div class="sui-status-bar">
+        <div class="sui-status-bar-panel">
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>32/50</span>
+            <i class="sui-icon sui-icon-energy"></i>
+          </a>
+        </div>
+
+
+        <div class="sui-theme-enemy sui-status-bar-panel">
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>100</span>
+            <i class="sui-icon sui-icon-enemy-shield-health"></i>
+          </a>
+          <a href="javascript: void(0)" class="sui-resource">
+            <span>3</span>
+            <i class="sui-icon sui-icon-alpha-ore"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <h2 class="sub-section-header">HUD Indicator</h2>
+
+  <div class="ui-element-container">
+    <div class="sui-hud-indicator sui-mod-warning sui-mod-top">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-detected"></i>
+      </div>
+    </div>
+
+    <div class="sui-hud-indicator sui-mod-warning sui-mod-bottom">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-detected"></i>
+      </div>
+    </div>
+
+    <div class="sui-hud-indicator sui-mod-warning sui-mod-left">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-detected"></i>
+      </div>
+    </div>
+
+    <div class="sui-hud-indicator sui-mod-warning sui-mod-right">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-detected"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-hud-indicator sui-mod-primary">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-success"></i>
+      </div>
+    </div>
+
+    <div class="sui-hud-indicator sui-mod-warning">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-detected"></i>
+      </div>
+    </div>
+
+    <div class="sui-hud-indicator sui-mod-destructive">
+      <div class="sui-hud-indicator-icon">
+        <i class="sui-icon sui-icon-md icon-alert"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Content End -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sui-panel-edge-right"></div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/liga.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module">
+    import {SUI} from "./js/sui/SUI.js";
+
+    (new SUI()).init();
+  </script>
+</body>
+
+</html>

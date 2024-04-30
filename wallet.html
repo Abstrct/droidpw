@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Structs UI (SUI)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/structicons.css">
+  <link rel="stylesheet" href="css/sui/sui.css">
+  <link rel="stylesheet" href="css/sui-demo.css">
+
+
+</head>
+
+<body>
+  <div class="page-panel sui-panel sui-theme-player">
+    <div class="sui-panel-edge-left"></div>
+    <div class="sui-panel-chunk sui-mod-grow sui-mod-shrink">
+      <div class="sui-screen sui-screen-full-width">
+        <div class="sui-screen-nav">
+          <div class="sui-screen-nav-items">
+            <a class="sui-screen-nav-item sui-mod-active" href="#text">Testnet Address</a>
+          </div>
+        </div>
+      </div>
+      <div class="sui-screen sui-screen-full-width sui-screen-shrink">
+        <div class="sui-page-body-screen">
+          <div id="content-container" class="content">
+
+<!-- Content Start -->
+
+<section>
+  <a id="structsUI">
+    <img src="/img/sui/logo/logo-structs.gif" alt="Animated Structs logo with glitching">
+    <h1>Structs Testnet Address</h1>
+  </a>
+</section>
+
+
+<section>
+  <div class="ui-element-container">
+    <p class="sui-text-display" id="address">
+
+    </p>
+  </div>
+
+  <div class="ui-element-container">
+    <div class="sui-text-paragraph" id="mnemonic">
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- Content End -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sui-panel-edge-right"></div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/liga.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script type="module">
+    import {SUI} from "./js/sui/SUI.js";
+
+    (new SUI()).init();
+  </script>
+  <script src="js/walletPage.js"></script>
+</body>
+
+</html>

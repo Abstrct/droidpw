@@ -65,7 +65,7 @@ section {
 }
 
 .sui-screen-portrait-image.skull-head {
-  background-image: url("/img/sui/mock/mock-droid-168.png");
+  background-image: url("img/sui/mock/mock-droid-168.png");
 }
 
 .grid-container {

@@ -1,0 +1,141 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Structs UI (SUI)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/structicons.css">
+  <link rel="stylesheet" href="css/sui/sui.css">
+  <link rel="stylesheet" href="css/sui-demo.css">
+</head>
+
+<body>
+<div class="page-panel sui-panel sui-theme-player">
+  <div class="sui-panel-edge-left"></div>
+  <div class="sui-panel-chunk sui-mod-grow sui-mod-shrink">
+    <div class="sui-screen sui-screen-full-width">
+      <div class="sui-screen-nav">
+        <div class="sui-screen-nav-items">
+          <a class="sui-screen-nav-item sui-mod-active" href="#structsUI">Structs UI</a>
+          <a class="sui-screen-nav-item" href="#text">Text</a>
+          <a class="sui-screen-nav-item" href="#icons">Icons</a>
+          <a class="sui-screen-nav-item" href="#panelButtons">Panel Buttons</a>
+          <a class="sui-screen-nav-item" href="#cheatsheet">Cheatsheet</a>
+          <a class="sui-screen-nav-item" href="#screenButtons">Screen Buttons</a>
+          <a class="sui-screen-nav-item" href="#panels">Panels</a>
+          <a class="sui-screen-nav-item" href="#screens">Screens</a>
+          <a class="sui-screen-nav-item" href="#actionBar">Action Bar</a>
+          <a class="sui-screen-nav-item" href="#dialoguePanel">Dialogue Panel</a>
+          <a class="sui-screen-nav-item" href="#pageElements">Page Elements</a>
+          <a class="sui-screen-nav-item" href="#formElements">Form Elements</a>
+          <a class="sui-screen-nav-item" href="#pageLayout">Page Layout</a>
+          <a class="sui-screen-nav-item" href="#messages">Messages</a>
+          <a class="sui-screen-nav-item" href="#planetCard">Planet Card</a>
+          <a class="sui-screen-nav-item" href="#hudElements">HUD Elements</a>
+        </div>
+      </div>
+    </div>
+    <div class="sui-screen sui-screen-full-width sui-screen-shrink">
+      <div class="sui-page-body-screen">
+        <div id="content-container" class="content">
+
+          <!-- Content Start -->
+          <div class="ui-element-container">
+            <div class="sui-panel sui-theme-player fixed-width-container-md">
+              <h1 class="sui-text-display">Player Dashboard</h1>
+              <form>
+                <div class="sui-form-field">
+                  <label class="sui-text-header">Player Name</label>
+                  <input type="text" class="sui-input" placeholder="Enter player name">
+                </div>
+                <div class="sui-form-field">
+                  <label class="sui-text-header">Player ID</label>
+                  <input type="text" class="sui-input" placeholder="Player ID" readonly>
+                </div>
+                <div class="sui-form-field">
+                  <label class="sui-text-header">Alpha Balance</label>
+                  <input type="text" class="sui-input" placeholder="0 Alpha" readonly>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ui-element-container">
+            <div class="sui-panel sui-theme-player fixed-width-container-md">
+              <button class="sui-screen-btn sui-mod-primary">Copy Player Address</button>
+            </div>
+
+            <div class="sui-panel sui-theme-player fixed-width-container-md">
+              <button class="sui-screen-btn sui-mod-primary">Copy Mnemonic</button>
+            </div>
+
+            <div class="sui-panel sui-theme-player fixed-width-container-md">
+              <button class="sui-screen-btn sui-mod-primary">Deploy Droid</button>
+            </div>
+          </div>
+          <div class="ui-element-container">
+            <div class="sui-panel fixed-width-container-lg">
+              <h2 class="sui-text-header">Deployed Droids</h2>
+              <table class="sui-table">
+                <thead>
+                <tr>
+                  <th>Player ID</th>
+                  <th># of Planets Completed</th>
+                  <th># of Alpha Ore</th>
+                  <th>Energy Load</th>
+                  <th>Energy Capacity</th>
+                  <th>Has Miner Struct</th>
+                  <th>Is Mining Active</th>
+                  <th>Has Refiner Structs</th>
+                  <th>Is Refining Active</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- Table rows go here -->
+                </tbody>
+              </table>
+            </div>
+</div>
+            <div class="ui-element-container">
+          <div class="sui-panel fixed-width-container-lg">
+            <h2 class="sui-text-header">Active Jobs</h2>
+            <table class="sui-table">
+              <thead>
+              <tr>
+                <th>Player ID</th>
+                <th>Job Type</th>
+                <th>Block Started</th>
+                <th>Current Difficulty</th>
+              </tr>
+              </thead>
+              <tbody>
+              <!-- Table rows go here -->
+              </tbody>
+            </table>
+          </div>
+          <!-- Content End -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sui-panel-edge-right"></div>
+</div>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/liga.js"></script>
+<script src="js/main.js"></script>
+<script type="module">
+  import {SUI} from "./js/sui/SUI.js";
+
+  (new SUI()).init();
+</script>
+</body>
+
+</html>

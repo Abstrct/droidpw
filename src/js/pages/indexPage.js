@@ -10,16 +10,21 @@ import { rawSecp256k1PubkeyToRawAddress } from "@cosmjs/amino";
 const player = new Player();
 await player.init();
 
+function bytesToHex(byteArray) {
+  return Array.from(byteArray, byte => {
+    return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+  }).join('');
+}
 
 const page = 'index';
 
 console.log("Player Address: " + player.address)
 
-
+/*
 let current_balance = await player.queryBalance()
 console.log(current_balance);
 console.log("Balance " + current_balance.data.balances[0].amount + current_balance.data.balances[0].denom)
-
+*/
 
 
 
@@ -30,7 +35,8 @@ await tmpPlayer.init();
 
 
 // Create Message
-let proxy_message = "GUILD" + "0-1" + "ADDRESS" + tmpPlayer.address
+let nonce = 0
+let proxy_message = "GUILD" + "0-1" + "ADDRESS" + tmpPlayer.address + "NONCE" + nonce
 console.log("Proxy Message:" + proxy_message)
 
 
@@ -86,11 +92,59 @@ const fee = {
 };
 
 
-let joinResults = await player.performJoinProxy(tmpPlayer.address, signing_account[0].pubkey, signature.toFixedLength(), fee)
-console.log(joinResults)
+console.log("Guild Join info")
+const viewGuildPubKey = bytesToHex(signing_account[0].pubkey);
+console.log(viewGuildPubKey);
+const viewGuildSignature = bytesToHex(signature.toFixedLength());
+console.log(viewGuildSignature);
+
+//let joinResults = await player.performJoinProxy(tmpPlayer.address, signing_account[0].pubkey, signature.toFixedLength(), fee)
+//console.log(joinResults)
 
 /*
 
 {"username":null,"mnemonic":"","address":""}
 
  */
+
+
+
+// Create Message
+let address_message = "PLAYER" + "1-1" + "ADDRESS" + tmpPlayer.address
+console.log("Proxy Message:" + address_message)
+
+
+// Create Hash of Message
+const encoded_address_message = new TextEncoder().encode(address_message)
+let address_digest = sha256(encoded_address_message)
+console.log("Hash: " + address_digest)
+
+
+// Sign Message
+
+let address_signature = await Secp256k1.createSignature(address_digest, signing_account[0].privkey)
+console.log("Signature")
+console.log(address_signature)
+// verify signature
+let verifyAddressSign = await Secp256k1.verifySignature(address_signature, address_digest, signing_account[0].pubkey)
+console.log(verifyAddressSign)
+
+let recoveredAddressPubKey = await Secp256k1.recoverPubkey(address_signature, address_digest)
+console.log("Signing Account pub key")
+console.log(signing_account[0].pubkey)
+console.log("recovered pub key")
+console.log(recoveredAddressPubKey)
+
+console.log(tmpPlayer.address)
+console.log(signing_account[0].pubkey)
+console.log(signature.toFixedLength())
+
+
+
+console.log(tmpPlayer.address)
+//const viewPubKey = btoa(signing_account[0].pubkey);
+const viewPubKey = bytesToHex(signing_account[0].pubkey);
+console.log(viewPubKey);
+//const viewSignature = btoa(signature.toFixedLength());
+const viewSignature = bytesToHex(address_signature.toFixedLength());
+  console.log(viewSignature);
